@@ -1,0 +1,45 @@
+body {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#accounts-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#back-arrow:hover {
+    cursor: pointer;
+}
+
+#account-container {
+    /* position: relative; */
+    display: block;
+    height: 20vh;
+    width: 10vw;
+    border: .1rem solid rgba(70, 70, 70, .8);
+}
+
+/* https://stackoverflow.com/questions/526035/how-can-i-position-my-div-at-the-bottom-of-its-container */
+/* https://stackoverflow.com/questions/11811265/center-an-a-element */
+#actions {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: .1rem solid rgba(70, 70, 70, .8);
+}
+
+#actions > a {
+    text-decoration: none;
+}
+
+#actions > a > svg:hover {
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem .5rem rgba(70, 70, 70, .4);
+}
+
+#view-account-link {
+    text-decoration: none;
+    color: #000;
+}

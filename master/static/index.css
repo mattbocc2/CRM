@@ -1,0 +1,4 @@
+#contacts-container,
+#accounts-container {
+    border: .1rem solid rgba(70, 70, 70, .8);
+}

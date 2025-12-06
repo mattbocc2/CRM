@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('create_account') }}">Create an account</a>
+        <a href="{{ url_for('view_contacts') }}">Contacts</a>
+        <a href="{{ url_for('view_accounts') }}">Accounts</a>
+    </nav>
+
+    <div id="contacts-container">
+        <div>You've 5 contacts</div>
+        <div>You've created 1 contact today</div>
+    </div>
+    <div id="accounts-container">
+        <div>You've 5 accounts</div>
+        <div>You've created 1 account today</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRM</title>
+    <script type="text/javascript" src="{{ url_for('static', filename='create_contact.js') }}"></script>
+</head>
+<body>
+    <form method="post" action="#">
+        <label for="first-name">First name</label>
+        <input id="first-name" name="first-name" autocomplete="off" spellcheck="false" type="text">
+        <label for="last-name">Last name</label>
+        <input id="last-name" name="last-name" autocomplete="off" spellcheck="false" type="text">
+        <label for="tax-code">Tax code</label>
+        <input id="tax-code" name="tax-code" autocomplete="off" spellcheck="false" type="text">
+        <label for="email">Email</label>
+        <input id="email" name="email" autocomplete="off" spellcheck="false" type="email">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" autocomplete="off" spellcheck="false" type="tel">
+        <input id="vat-code" name="vat-code" type="text" value="{{ vat_code }}" hidden>
+    </form>
+</body>
+</html>
